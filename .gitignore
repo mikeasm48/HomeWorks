@@ -71,3 +71,6 @@ fastlane/test_output
 .DS_Store
 HomeWork/.DS_Store
 HomeWorkDownloadPicture/HomeWorkDownloadPicture.xcodeproj
+
+*.xcodeproj/
+*.DS_Store
