@@ -68,9 +68,5 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # HomeWorks Projects
-.DS_Store
-HomeWork/.DS_Store
-HomeWorkDownloadPicture/HomeWorkDownloadPicture.xcodeproj
-
 *.xcodeproj/
 *.DS_Store
