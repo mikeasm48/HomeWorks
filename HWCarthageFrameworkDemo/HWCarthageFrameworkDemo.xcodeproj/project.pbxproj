@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00CFD84B2375608E00DE472C /* HWSomeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFD848237556B700DE472C /* HWSomeFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		00D2369A2375D722004636A9 /* HWSomeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFD848237556B700DE472C /* HWSomeFramework.framework */; };
+		00D2369B2375D722004636A9 /* HWSomeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFD848237556B700DE472C /* HWSomeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00D441A2237542D800485BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D441A1237542D800485BF0 /* AppDelegate.swift */; };
 		00D441A4237542D800485BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D441A3237542D800485BF0 /* ViewController.swift */; };
 		00D441A7237542D800485BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D441A5237542D800485BF0 /* Main.storyboard */; };
 		00D441A9237542DA00485BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D441A8237542DA00485BF0 /* Assets.xcassets */; };
 		00D441AC237542DA00485BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D441AA237542DA00485BF0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00D2369C2375D722004636A9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00D2369B2375D722004636A9 /* HWSomeFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00CFD848237556B700DE472C /* HWSomeFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HWSomeFramework.framework; path = Carthage/Build/iOS/HWSomeFramework.framework; sourceTree = "<group>"; };
@@ -31,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00CFD84B2375608E00DE472C /* HWSomeFramework.framework in Frameworks */,
+				00D2369A2375D722004636A9 /* HWSomeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 				00D4419B237542D800485BF0 /* Frameworks */,
 				00D4419C237542D800485BF0 /* Resources */,
 				00CFD84A2375574400DE472C /* ShellScript */,
+				00D2369C2375D722004636A9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
