@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		00AC3BC123753C6D004107FA /* HWSomeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AC3BBF23753C6D004107FA /* HWSomeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00AC3BC823753D25004107FA /* PerfectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC3BC723753D25004107FA /* PerfectViewController.swift */; };
+		00CFD871237565CB00DE472C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD870237565CB00DE472C /* AppDelegate.swift */; };
+		00CFD873237565CB00DE472C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD872237565CB00DE472C /* ViewController.swift */; };
+		00CFD876237565CB00DE472C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CFD874237565CB00DE472C /* Main.storyboard */; };
+		00CFD878237565CD00DE472C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CFD877237565CD00DE472C /* Assets.xcassets */; };
+		00CFD87B237565CD00DE472C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CFD879237565CD00DE472C /* LaunchScreen.storyboard */; };
+		00CFD8812375660E00DE472C /* HWSomeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AC3BBC23753C6D004107FA /* HWSomeFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +22,13 @@
 		00AC3BBF23753C6D004107FA /* HWSomeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWSomeFramework.h; sourceTree = "<group>"; };
 		00AC3BC023753C6D004107FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00AC3BC723753D25004107FA /* PerfectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectViewController.swift; sourceTree = "<group>"; };
+		00CFD86E237565CB00DE472C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CFD870237565CB00DE472C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00CFD872237565CB00DE472C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00CFD875237565CB00DE472C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00CFD877237565CD00DE472C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00CFD87A237565CD00DE472C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00CFD87C237565CD00DE472C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00CFD86B237565CB00DE472C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CFD8812375660E00DE472C /* HWSomeFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				00AC3BBE23753C6D004107FA /* HWSomeFramework */,
+				00CFD86F237565CB00DE472C /* Example */,
 				00AC3BBD23753C6D004107FA /* Products */,
+				00CFD8802375660E00DE472C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				00AC3BBC23753C6D004107FA /* HWSomeFramework.framework */,
+				00CFD86E237565CB00DE472C /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +77,26 @@
 				00AC3BC023753C6D004107FA /* Info.plist */,
 			);
 			path = HWSomeFramework;
+			sourceTree = "<group>";
+		};
+		00CFD86F237565CB00DE472C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				00CFD870237565CB00DE472C /* AppDelegate.swift */,
+				00CFD872237565CB00DE472C /* ViewController.swift */,
+				00CFD874237565CB00DE472C /* Main.storyboard */,
+				00CFD877237565CD00DE472C /* Assets.xcassets */,
+				00CFD879237565CD00DE472C /* LaunchScreen.storyboard */,
+				00CFD87C237565CD00DE472C /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		00CFD8802375660E00DE472C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,18 +131,39 @@
 			productReference = 00AC3BBC23753C6D004107FA /* HWSomeFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		00CFD86D237565CB00DE472C /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CFD87F237565CD00DE472C /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				00CFD86A237565CB00DE472C /* Sources */,
+				00CFD86B237565CB00DE472C /* Frameworks */,
+				00CFD86C237565CB00DE472C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 00CFD86E237565CB00DE472C /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		00AC3BB323753C6D004107FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Михаил Асмаковец";
 				TargetAttributes = {
 					00AC3BBB23753C6D004107FA = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
+					};
+					00CFD86D237565CB00DE472C = {
+						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
@@ -108,6 +173,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 00AC3BB223753C6D004107FA;
 			productRefGroup = 00AC3BBD23753C6D004107FA /* Products */;
@@ -115,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				00AC3BBB23753C6D004107FA /* HWSomeFramework */,
+				00CFD86D237565CB00DE472C /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +191,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CFD86C237565CB00DE472C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CFD87B237565CD00DE472C /* LaunchScreen.storyboard in Resources */,
+				00CFD878237565CD00DE472C /* Assets.xcassets in Resources */,
+				00CFD876237565CB00DE472C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +215,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00CFD86A237565CB00DE472C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CFD873237565CB00DE472C /* ViewController.swift in Sources */,
+				00CFD871237565CB00DE472C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00CFD874237565CB00DE472C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00CFD875237565CB00DE472C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00CFD879237565CD00DE472C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00CFD87A237565CD00DE472C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00AC3BC223753C6D004107FA /* Debug */ = {
@@ -316,6 +421,42 @@
 			};
 			name = Release;
 		};
+		00CFD87D237565CD00DE472C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26LWM2HSCG;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Home-Office.Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00CFD87E237565CD00DE472C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26LWM2HSCG;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Home-Office.Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +474,15 @@
 			buildConfigurations = (
 				00AC3BC523753C6D004107FA /* Debug */,
 				00AC3BC623753C6D004107FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CFD87F237565CD00DE472C /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CFD87D237565CD00DE472C /* Debug */,
+				00CFD87E237565CD00DE472C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

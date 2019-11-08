@@ -12,7 +12,7 @@ import UIKit
  * Changes view background up to 200% more effective!
  * It's really cool, use it wherever you can
  */
-class PerfectViewController: UIViewController {
+open class PerfectViewController: UIViewController {
     public func changeBackground (withColor color : UIColor) {
         self.view.backgroundColor = color
     }

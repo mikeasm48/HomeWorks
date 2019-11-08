@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CFD84B2375608E00DE472C /* HWSomeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFD848237556B700DE472C /* HWSomeFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		00D441A2237542D800485BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D441A1237542D800485BF0 /* AppDelegate.swift */; };
 		00D441A4237542D800485BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D441A3237542D800485BF0 /* ViewController.swift */; };
 		00D441A7237542D800485BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D441A5237542D800485BF0 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00CFD848237556B700DE472C /* HWSomeFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HWSomeFramework.framework; path = Carthage/Build/iOS/HWSomeFramework.framework; sourceTree = "<group>"; };
 		00D4419E237542D800485BF0 /* HWCarthageFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWCarthageFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D441A1237542D800485BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D441A3237542D800485BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CFD84B2375608E00DE472C /* HWSomeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00CFD847237556B700DE472C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CFD848237556B700DE472C /* HWSomeFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		00D44195237542D800485BF0 = {
 			isa = PBXGroup;
 			children = (
 				00D441A0237542D800485BF0 /* HWCarthageFrameworkDemo */,
 				00D4419F237542D800485BF0 /* Products */,
+				00CFD847237556B700DE472C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +86,7 @@
 				00D4419A237542D800485BF0 /* Sources */,
 				00D4419B237542D800485BF0 /* Frameworks */,
 				00D4419C237542D800485BF0 /* Resources */,
+				00CFD84A2375574400DE472C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +142,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00CFD84A2375574400DE472C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/HWSomeFramework.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00D4419A237542D800485BF0 /* Sources */ = {
@@ -284,6 +318,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26LWM2HSCG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HWCarthageFrameworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +340,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26LWM2HSCG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HWCarthageFrameworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
